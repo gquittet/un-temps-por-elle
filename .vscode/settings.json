@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "alpinejs",
+    "Grazie",
+    "Hurtebise",
+    "Lomi",
+    "Splide",
+    "splidejs",
+    "Waze"
+  ],
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/.idea": true,
+    "**/.parcel-cache": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/node_modules": true
+  }
+}

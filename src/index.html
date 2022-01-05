@@ -1,0 +1,250 @@
+<!--suppress HtmlUnknownTarget, XmlUnboundNsPrefix -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Un Temps po'r elle - Soins de Bien-être / Soins esthétiques</title>
+    <meta
+      content="Un Temps po'r elle - Soins de Bien-être / Soins esthétiques"
+      name="description"
+    />
+    <meta content="HTML, CSS, JavaScript" name="keywords" />
+    <link rel="icon" href="./images/favicon.jpg" />
+
+    <link href="style.scss" rel="stylesheet" />
+
+    <script src="main.js" type="module"></script>
+  </head>
+  <body x-data="{ page: location.hash }">
+    <header>
+      <a
+        class="text-base hover:underline underline"
+        :class="{ 'underline': page === '#accueil' }"
+        href="#accueil"
+      >
+        Accueil
+      </a>
+      <a
+        class="text-base hover:underline underline"
+        :class="{ 'underline': page === '#soins' }"
+        href="#soins"
+      >
+        Nos soins
+      </a>
+      <a
+        class="text-base hover:underline underline"
+        :class="{ 'underline': page === '#tarifs' }"
+        href="#tarifs"
+      >
+        Tarifs
+      </a>
+      <a
+        class="text-base hover:underline underline"
+        :class="{ 'underline': page === '#contact' }"
+        href="#contact"
+      >
+        Contact
+      </a>
+    </header>
+    <main class="scroll-smooth" @scroll.debounce="() => { location.hash = page }">
+      <section
+        id="accueil"
+        x-data="{ shown: false }"
+        x-intersect.full="shown = true"
+        x-intersect:enter.half="page = '#accueil'"
+        class="relative"
+      >
+        <h1>Un Temps po'r elle</h1>
+
+        <div class="flex justify-center p-8">
+          <img
+            alt="Logo d'Un Temps po'r elle"
+            class="w-60"
+            src="./images/logo.jpg"
+            width="400"
+            height="400"
+          />
+        </div>
+
+        <!--suppress GrazieInspection -->
+        <span class="block text-lg mb-4">
+          Soins de Bien-être &mdash; Soins esthétiques
+        </span>
+
+        <div
+          class="chevron-down animate-smooth-bounce"
+          @click="location.href = '#soins'"
+        >
+          <img
+            src="npm:@fortawesome/fontawesome-free/svgs/solid/chevron-down.svg"
+            alt="Aller à la page 2"
+            width="10"
+            height="10"
+          />
+        </div>
+      </section>
+
+      <section
+        id="soins"
+        x-data="{ shown: false }"
+        x-intersect.full="shown = true"
+        x-intersect:enter.half="page = '#soins'"
+      >
+        <h2 x-show="shown">Nos Soins</h2>
+
+        <div x-show="shown" class="splide m-auto">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/soins-facial-treatment.jpg?as=webp" alt="Massages" />
+                <div>Soins visage</div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/soins-hand-beauty.jpg?as=webp" alt="Massages" />
+                <div>Beauté des mains / pieds</div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/soins-body.jpg?as=webp" alt="Massages" />
+                <div>Soins du corps</div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/soins-massage.jpg?as=webp" alt="Massages" />
+                <div>Massages relaxants / réflexologie</div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/soins-épilation.jpg?as=webp" alt="Épilations" />
+                <div>Épilations</div>
+              </li>
+              <li class="splide__slide">
+                <img src="./images/soins-maquillage.jpg?as=webp" alt="Maquillage" />
+                <div>Maquillage</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tarifs"
+        x-data="{ shown: false, }"
+        x-intersect.full="shown = true"
+        x-intersect:enter.half="page = '#tarifs'"
+      >
+        <h2 x-show="shown">Tarifs</h2>
+
+        <div x-show="shown" x-data="caresModal" class="prices-button">
+          <span @click="toggle">Soins visage</span>
+          <span @click="toggle">Beauté des mains/pieds</span>
+          <span @click="toggle">Soins du corps</span>
+          <span @click="toggle">Massages relaxants / Réflexologie</span>
+          <span @click="toggle">Épilations</span>
+          <span @click="toggle">Maquillage</span>
+          <span @click="toggle">Spécial mariée</span>
+          <span @click="toggle">Soins esthétiques pour personnes fragilisées</span>
+
+          <template x-teleport="body">
+            <div x-show="isOpen">
+              <div class="shadow" @click="close()"></div>
+              <div class="prices-popup">
+                <button @click="close()">
+                  <img
+                    src="npm:@fortawesome/fontawesome-free/svgs/solid/times.svg"
+                    alt="Fermer pop-up"
+                  />
+                </button>
+                <span class="title" x-text="titre"></span>
+                <template x-for="soin in soins">
+                  <div class="care">
+                    <span class="name" x-text="soin.name">Name</span>
+                    <div class="right">
+                      <span class="duration" x-text="soin.duration">Duration</span>
+                      <span class="price" x-text="soin.price">Price</span>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <a
+          x-show="shown"
+          href="public/brochure.png"
+          target="_blank"
+          rel="noreferrer"
+          class="contact-button bg-[#AFBD6C] shadow-[#AFBD6C]/20"
+        >
+          <img
+            src="npm:@fortawesome/fontawesome-free/svgs/solid/download.svg"
+            alt="Facebook logo"
+          />
+          Télécharger notre brochure
+        </a>
+      </section>
+
+      <section
+        class="relative"
+        id="contact"
+        x-data="{ shown: false }"
+        x-intersect.full="shown = true"
+        x-intersect:enter.half="page = '#contact'"
+      >
+        <h2 x-show="shown">Contact</h2>
+
+        <div x-show="shown">
+          <a
+            class="contact-button bg-[#0000005c] shadow-[#0000005c]/20"
+            href="tel:+32478126659"
+          >
+            <img
+              src="npm:@fortawesome/fontawesome-free/svgs/solid/phone-alt.svg"
+              alt="Téléphone logo"
+            />
+            0478/12.66.59
+          </a>
+          <a
+            class="contact-button bg-[#385898] shadow-[#385898]/20"
+            href="https://www.facebook.com/francoisegaillez.untempsporelle"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="npm:@fortawesome/fontawesome-free/svgs/brands/facebook.svg"
+              alt="Facebook logo"
+            />
+            <span>Facebook</span>
+          </a>
+          <a
+            class="contact-button bg-[#3182ce] shadow-[#3182ce]/20"
+            href="https://ul.waze.com/ul?ll=50.40659364%2C4.16921705&navigate=yes"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="npm:@fortawesome/fontawesome-free/svgs/brands/waze.svg"
+              alt="Waze logo"
+            />
+            <span>Venez nous rendre visite</span>
+          </a>
+        </div>
+
+        <div class="p-4" x-show="shown">
+          <p>Rue d'Hurtebise, 40</p>
+          <p>7130 Binche</p>
+        </div>
+
+        <a
+          class="absolute bottom-4 left-0 right-0"
+          href="https://v01dsOciTy.com"
+          rel="noreferrer"
+          target="_blank"
+          x-show="shown"
+        >
+          Fait avec ❤ par Guillaume Quittet
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

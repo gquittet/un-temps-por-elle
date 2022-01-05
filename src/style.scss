@@ -1,0 +1,201 @@
+@import url('./fonts/calicanto/stylesheet.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Forte';
+  src: url('./fonts/forte.ttf') format('truetype');
+  font-display: swap; /* Improve performance */
+}
+
+@font-face {
+  font-family: 'Bulletto Killa';
+  src: url('./fonts/Bulletto_Killa.ttf') format('truetype');
+  font-display: swap; /* Improve performance */
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  //noinspection CssUnknownProperty
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: Forte, Arial, sans-serif;
+  @apply text-4xl;
+}
+
+h2 {
+  font-family: Forte, Arial, sans-serif;
+  @apply text-4xl pb-4 mb-4;
+}
+
+header {
+  @apply flex justify-center mb-8 p-4 pt-10 gap-8 bg-[#FFFFFF50];
+  max-height: 7rem;
+}
+
+//noinspection CssOverwrittenProperties
+main {
+  @apply max-h-screen overflow-y-scroll snap-mandatory snap-y;
+  max-height: calc(100% - 7rem);
+  max-height: calc((var(--vh, 1vh) * 100) - 7rem);
+}
+
+//noinspection CssOverwrittenProperties
+section {
+  @apply w-full h-screen snap-center text-center;
+  max-height: calc(100vh - 7rem);
+  max-height: calc((var(--vh, 1vh) * 100) - 7rem);
+}
+
+section > * {
+  opacity: 0;
+  animation: smooth-reveal 1s linear forwards;
+}
+
+@for $i from 1 through 20 {
+  section > :nth-child(#{$i}) {
+    animation-delay: #{($i - 1) * 0.25}s;
+  }
+}
+
+/* Accueil */
+.chevron-down {
+  @apply cursor-pointer absolute bottom-8 left-0 right-0 p-4;
+}
+
+.chevron-down img {
+  @apply m-auto w-2.5;
+}
+
+/* Soins */
+/* Carrousel */
+.splide__track {
+  @apply rounded;
+}
+.splide__slide img {
+  @apply w-full h-auto;
+}
+.splide__slide {
+  @apply relative rounded;
+}
+.splide__slide div {
+  @apply absolute text-lg text-white bg-[#00000060] bottom-0 left-0 right-0 pb-10 pt-4;
+}
+
+/* Tarifs */
+.prices-button {
+  font-family: 'Calicanto', serif;
+  @apply grid grid-cols-2 grid-rows-2 gap-4 w-full pl-4 pr-4 m-auto mb-8;
+  @apply md:grid-cols-3 md:gap-8 md:mb-10 md:w-2/3;
+}
+
+.prices-button span {
+  @apply flex select-none text-base justify-center items-center p-1 h-14 border border-[#AFBD6C] rounded text-[#AFBD6C];
+  @apply transition-colors hover:text-white hover:bg-[#AFBD6C] cursor-pointer;
+  @apply md:text-lg md:p-2;
+}
+
+/* Popup */
+.shadow {
+  @apply fixed inset-0 bg-white opacity-70 z-0;
+}
+
+.prices-popup {
+  font-family: 'Calicanto', serif;
+  @apply fixed inset-0 rounded flex items-center bg-white flex-col;
+  @apply m-0 sm:m-10 md:mx-40 lg:mx-80;
+  @apply shadow-[#AFBD6C] shadow-md;
+  animation: bounced-reveal 0.25s ease forwards;
+
+  .title {
+    @apply text-center text-2xl block mt-10 mb-4;
+    font-family: Forte, Arial, sans-serif;
+  }
+
+  img {
+    @apply w-4;
+    @apply absolute top-4 right-4;
+  }
+
+  .care {
+    @apply w-[90%] py-1 flex gap-x-2;
+    @apply overflow-ellipsis overflow-hidden;
+    @apply border-b-2 border-[#AFBD6C];
+    @apply lg:py-2;
+
+    .name {
+      @apply w-3/4 block text-ellipsis text-left;
+    }
+
+    .right {
+      @apply w-1/4 flex justify-end gap-x-2;
+
+      .duration, .price {
+        @apply w-auto block;
+      }
+    }
+  }
+}
+
+
+
+/* Contact */
+.contact-button {
+  @apply flex justify-center text-white w-80 p-2 m-auto my-4 rounded-lg shadow-lg;
+}
+.contact-button img {
+  @apply w-5 mr-2;
+  /* Convert contact-button icon from black to white */
+  filter: invert(1);
+}
+
+/* Animations */
+.animate-smooth-bounce {
+  animation: smooth-bounce 2s linear infinite;
+}
+
+@keyframes smooth-bounce {
+  0% {
+    transform: translate3d(0, -5px, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 5px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes smooth-reveal {
+  0% {
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounced-reveal {
+  0% {
+    margin: 100%;
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Browser 🌐",
+      "url": "http://localhost:1234",
+      "webRoot": "${workspaceFolder}",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "../*": "${webRoot}/*"
+      },
+      "preLaunchTask": "start"
+    }
+  ]
+}
