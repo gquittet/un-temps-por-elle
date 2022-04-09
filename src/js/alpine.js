@@ -22,10 +22,10 @@ const carePrices = {
     { name: 'For men', duration: '60 min', price: '55€' },
   ],
   'Beauté des mains/pieds': [
-    { name: 'Manucure + pose vernis classique', price: '12€' },
-    { name: 'Spa + pose vernis classique', price: '25€' },
+    { name: 'Manucure + pose vernis classique', price: '12€+5€' },
+    { name: 'Spa + pose vernis classique', price: '25€+5€' },
     { name: 'Pose vernis semi permanent', price: '20€' },
-    { name: 'Pédicure esthétique + pose vernis classique', price: '12€' },
+    { name: 'Pédicure esthétique + pose vernis classique', price: '12€+5€' },
     {
       name: 'Dépose vernis semi permanent (pose extérieure)',
       price: '10€',
@@ -78,7 +78,7 @@ const carePrices = {
     { name: 'Jambes complètes', price: '25€' },
     { name: 'Bikini simple', price: '15€' },
   ],
-  Maquillage: [{ name: 'Maquillage jour/soirée', price: '50€' }],
+  Maquillage: [{ name: 'Maquillage jour/soirée', price: '25€' }],
   'Spécial mariée': [
     { name: "Séance d'essai", price: '12€' },
     {
@@ -99,8 +99,8 @@ const carePrices = {
     },
   ],
   'Soins esthétiques pour personnes fragilisées': [
-    { name: 'Soin visage', price: '20€' },
-    { name: 'Soin des mains/pieds', price: '10€' },
+    { name: 'Soin visage', price: '50€' },
+    { name: 'Soin des mains/pieds', price: '20€' },
     { name: 'Soin des ongles', price: '10€' },
     { name: 'Conseils (maquillage, soins, ...)', price: '15€' },
     { name: 'Massage relaxant', price: '50€' },
