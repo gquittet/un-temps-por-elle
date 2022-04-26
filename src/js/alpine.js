@@ -22,10 +22,10 @@ const carePrices = {
     { name: 'For men', duration: '60 min', price: '55€' },
   ],
   'Beauté des mains/pieds': [
-    { name: 'Manucure + pose vernis classique', price: '12€+5€' },
-    { name: 'Spa + pose vernis classique', price: '25€+5€' },
+    { name: 'Manucure + pose vernis classique', price: '12€ + 5€' },
+    { name: 'Spa + pose vernis classique', price: '25€ + 5€' },
     { name: 'Pose vernis semi permanent', price: '20€' },
-    { name: 'Pédicure esthétique + pose vernis classique', price: '12€+5€' },
+    { name: 'Pédicure esthétique + pose vernis classique', price: '12€ + 5€' },
     {
       name: 'Dépose vernis semi permanent (pose extérieure)',
       price: '10€',
