@@ -131,14 +131,16 @@ section > * {
 /* Popup */
 .shadow {
   @apply fixed inset-0 bg-white opacity-70 z-0;
+  animation: bounced-reveal 250ms ease forwards;
 }
 
 .prices-popup {
   font-family: 'Calicanto', serif;
-  @apply fixed inset-0 rounded flex items-center bg-white flex-col;
-  @apply m-0 sm:m-10 md:mx-40 lg:mx-80;
-  @apply shadow-[#AFBD6C] shadow-md;
-  animation: bounced-reveal 0.25s ease forwards;
+  @apply fixed inset-0 rounded flex flex-col items-center bg-white;
+  @apply m-0 sm:m-10 md:mx-20 lg:mx-40;
+  @apply shadow-[#00000050] drop-shadow-lg;
+  @apply md:border-8 md:border-[#AFBD6C];
+  animation: bounced-reveal 250ms ease forwards;
 
   .title {
     @apply text-center text-2xl block mt-10 mb-4;
@@ -212,7 +214,7 @@ section > * {
     opacity: 0;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
   100% {
     opacity: 1;
