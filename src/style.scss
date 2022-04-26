@@ -66,6 +66,16 @@ section > * {
   }
 }
 
+.button {
+  @apply flex justify-center text-white w-80 p-2 rounded-lg shadow-lg;
+
+  img {
+    @apply w-5 mr-2;
+    /* Convert contact-button icon from black to white */
+    filter: invert(1);
+  }
+}
+
 /* Accueil */
 .chevron-down {
   @apply cursor-pointer absolute bottom-8 left-0 right-0 p-4;
@@ -102,6 +112,11 @@ section > * {
   @apply transition-colors hover:text-white hover:bg-[#AFBD6C] cursor-pointer;
   @apply md:text-lg md:p-2;
 }
+
+.download-button {
+  @apply m-auto my-2 bg-[#AFBD6C] shadow-[#AFBD6C]/20;
+}
+
 
 /* Popup */
 .shadow {
@@ -146,15 +161,9 @@ section > * {
 }
 
 
-
 /* Contact */
 .contact-button {
-  @apply flex justify-center text-white w-80 p-2 m-auto my-4 rounded-lg shadow-lg;
-}
-.contact-button img {
-  @apply w-5 mr-2;
-  /* Convert contact-button icon from black to white */
-  filter: invert(1);
+  @apply m-auto my-4;
 }
 
 /* Animations */
