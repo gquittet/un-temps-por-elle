@@ -20,6 +20,7 @@
     "@parcel/compressor-gzip": "^2.5.0",
     "@parcel/reporter-bundle-buddy": "^2.5.0",
     "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-yaml": "^2.5.0",
     "autoprefixer": "^10.4.5",
     "parcel": "^2.5.0",
     "postcss": "^8.4.12",
