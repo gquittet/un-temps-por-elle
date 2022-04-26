@@ -16,21 +16,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/compressor-brotli": "^2.0.1",
-    "@parcel/compressor-gzip": "^2.0.1",
-    "@parcel/reporter-bundle-buddy": "^2.0.1",
-    "@parcel/transformer-sass": "^2.3.2",
-    "autoprefixer": "^10.4.0",
-    "parcel": "^2.0.1",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
+    "@parcel/compressor-brotli": "^2.5.0",
+    "@parcel/compressor-gzip": "^2.5.0",
+    "@parcel/reporter-bundle-buddy": "^2.5.0",
+    "@parcel/transformer-sass": "^2.5.0",
+    "autoprefixer": "^10.4.5",
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
     "sharp": "^0.29.3",
-    "tailwindcss": "^3.0.2"
+    "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "@alpinejs/intersect": "^3.7.0",
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@splidejs/splide": "^3.6.9",
-    "alpinejs": "^3.7.0"
+    "@alpinejs/intersect": "^3.10.2",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@splidejs/splide": "^4.0.1",
+    "alpinejs": "^3.10.2"
   }
 }
