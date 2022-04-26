@@ -118,7 +118,7 @@ section > * {
 }
 
 .prices-button span {
-  @apply flex select-none text-base justify-center items-center p-1 h-14 border border-[#AFBD6C] rounded text-[#AFBD6C];
+  @apply flex select-none text-base justify-center items-center p-1 h-auto min-h-[3.5rem] border border-[#AFBD6C] rounded text-[#AFBD6C];
   @apply transition-colors hover:text-white hover:bg-[#AFBD6C] cursor-pointer;
   @apply md:text-lg md:p-2;
 }
