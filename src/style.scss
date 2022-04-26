@@ -79,7 +79,7 @@ section > * {
 
 /* Accueil */
 .chevron-down {
-  @apply cursor-pointer absolute bottom-8 left-0 right-0 p-4;
+  @apply cursor-pointer absolute bottom-8 left-0 right-0;
 }
 
 .chevron-down img {
@@ -100,6 +100,15 @@ section > * {
 .splide__slide div {
   @apply absolute text-lg text-white bg-[#00000060] bottom-0 left-0 right-0 pb-10 pt-4;
 }
+
+.oncobulle-logo {
+  @apply flex items-center justify-center p-2;
+
+  img {
+    @apply w-auto h-36;
+  }
+}
+
 
 /* Tarifs */
 .prices-button {
