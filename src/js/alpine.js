@@ -16,11 +16,9 @@ Alpine.data('caresModal', () => ({
     this.titre = care
     this.soins = carePrices[care]
     this.isOpen = true
-    console.log('Ouvre la popup')
   },
   close() {
     this.isOpen = false
-    console.log('Ferme la popup')
   },
   clear() {
     this.soins = []
