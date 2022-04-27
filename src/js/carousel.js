@@ -16,5 +16,6 @@ export const setupCarousel = () => {
     drag: false,
     autoplay: true,
     pauseOnHover: false,
+    pagination: false,
   }).mount()
 }

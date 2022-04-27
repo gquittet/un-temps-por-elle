@@ -101,7 +101,7 @@ section > * {
 }
 
 .splide__slide div {
-  @apply absolute text-lg text-white bg-[#00000060] bottom-0 left-0 right-0 pb-10 pt-4;
+  @apply absolute text-lg text-white backdrop-blur-sm bg-[#00000060] bottom-0 left-0 right-0 pb-7 pt-7;
 }
 
 .oncobulle-logo {
