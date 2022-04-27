@@ -116,7 +116,7 @@ section > * {
 .prices-button {
   font-family: 'Calicanto', serif;
   @apply grid grid-cols-2 grid-rows-2 gap-4 w-full pl-4 pr-4 m-auto mb-8;
-  @apply md:grid-cols-3 md:gap-8 md:mb-10 md:w-2/3;
+  @apply lg:mb-10 lg:w-2/3;
 }
 
 .prices-button span {
