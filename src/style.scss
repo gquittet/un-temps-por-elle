@@ -38,22 +38,22 @@ h2 {
 }
 
 header {
-  @apply flex justify-center mb-8 p-4 pt-10 gap-8 bg-[#FFFFFF50];
-  max-height: 7rem;
+  @apply fixed top-0 left-0 right-0 z-10;
+  @apply flex justify-center items-center p-4 gap-8;
+  @apply h-24 max-h-24;
+  @apply backdrop-blur-md bg-[#FFFFFFDD];
 }
 
 //noinspection CssOverwrittenProperties
 main {
   @apply max-h-screen overflow-y-scroll snap-mandatory snap-y;
-  max-height: calc(100% - 7rem);
-  max-height: calc((var(--vh, 1vh) * 100) - 7rem);
+  max-height: calc(var(--vh, 1vh) * 100);
 }
 
 //noinspection CssOverwrittenProperties
 section {
-  @apply w-full h-screen snap-center text-center;
-  max-height: calc(100vh - 7rem);
-  max-height: calc((var(--vh, 1vh) * 100) - 7rem);
+  @apply w-full h-screen snap-start text-center pt-24;
+  max-height: calc(var(--vh, 1vh) * 100);
 }
 
 section > * {
@@ -112,7 +112,6 @@ section > * {
   }
 }
 
-
 /* Tarifs */
 .prices-button {
   font-family: 'Calicanto', serif;
@@ -130,19 +129,19 @@ section > * {
   @apply m-auto my-2 bg-[#AFBD6C] shadow-[#AFBD6C]/20;
 }
 
-
 /* Popup */
 .shadow {
-  @apply fixed inset-0 bg-white opacity-70 z-0;
+  @apply fixed inset-0 bg-white opacity-70 z-30;
   animation: bounced-reveal 250ms ease forwards;
 }
 
 .prices-popup {
   font-family: 'Calicanto', serif;
-  @apply fixed inset-0 rounded flex flex-col items-center bg-white;
+  @apply fixed inset-0 z-50;
+  @apply flex flex-col items-center;
+  @apply rounded bg-white md:border-8 md:border-[#AFBD6C];
   @apply m-0 sm:m-10 md:mx-20 lg:mx-40;
   @apply shadow-[#00000050] drop-shadow-lg;
-  @apply md:border-8 md:border-[#AFBD6C];
   animation: bounced-reveal 250ms ease forwards;
 
   .title {
@@ -168,13 +167,13 @@ section > * {
     .right {
       @apply w-1/4 flex justify-end gap-x-2;
 
-      .duration, .price {
+      .duration,
+      .price {
         @apply w-auto block;
       }
     }
   }
 }
-
 
 /* Contact */
 .contact-button {
