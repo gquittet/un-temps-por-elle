@@ -79,11 +79,11 @@ section > * {
 
 /* Accueil */
 .chevron-down {
-  @apply cursor-pointer absolute bottom-8 left-0 right-0;
-}
+  @apply absolute bottom-8 left-0 right-0 flex items-center justify-center;
 
-.chevron-down img {
-  @apply m-auto w-2.5;
+  img {
+    @apply cursor-pointer p-4 w-11;
+  }
 }
 
 /* Soins */
