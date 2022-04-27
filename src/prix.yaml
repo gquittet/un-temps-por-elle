@@ -21,18 +21,6 @@ Soins visage:
     duration: 60 min
     price: 55€
 
-Beauté des mains/pieds:
-  - name: Manucure + pose vernis classique
-    price: 12€ + 5€
-  - name: Spa + pose vernis classique
-    price: 25€ + 5€
-  - name: Pose vernis semi permanent
-    price: 20€
-  - name: Pédicure esthétique + pose vernis classique
-    price: 12€ + 5€
-  - name: Dépose vernis semi permanent (pose extérieure)
-    price: 10€
-
 Soins du corps:
   - name: Gommage
     duration: 30 min
@@ -52,6 +40,18 @@ Soins du corps:
   - name: Rituel du corps (gommage, enveloppement, massage) - Duo
     duration: "+/- 2h"
     price: 180€
+
+Beauté des mains/pieds:
+  - name: Manucure + pose vernis classique
+    price: 12€ + 5€
+  - name: Spa + pose vernis classique
+    price: 25€ + 5€
+  - name: Pose vernis semi permanent
+    price: 20€
+  - name: Pédicure esthétique + pose vernis classique
+    price: 12€ + 5€
+  - name: Dépose vernis semi permanent (pose extérieure)
+    price: 10€
 
 Massages relaxants / Réflexologie:
   - name: Aux huiles essentielles (Dos)

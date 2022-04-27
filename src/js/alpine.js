@@ -9,6 +9,7 @@ Alpine.plugin(intersect)
 window.Alpine = Alpine
 
 Alpine.data('caresModal', () => ({
+  categories: Object.keys(carePrices),
   soins: [],
   titre: '',
   isOpen: false,

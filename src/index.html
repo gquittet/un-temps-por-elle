@@ -153,14 +153,9 @@
         <h2 x-show="shown">Tarifs</h2>
 
         <div x-show="shown" x-data="caresModal" class="prices-button">
-          <span @click="toggle">Soins visage</span>
-          <span @click="toggle">Beauté des mains/pieds</span>
-          <span @click="toggle">Soins du corps</span>
-          <span @click="toggle">Massages relaxants / Réflexologie</span>
-          <span @click="toggle">Épilations</span>
-          <span @click="toggle">Maquillage</span>
-          <span @click="toggle">Spécial mariée</span>
-          <span @click="toggle">Soins esthétiques pour personnes fragilisées</span>
+          <template x-for="category in categories">
+            <span @click="toggle" x-text="category"></span>
+          </template>
 
           <template x-teleport="body">
             <div x-show="isOpen">
