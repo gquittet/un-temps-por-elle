@@ -27,6 +27,14 @@ html {
   display: none;
 }
 
+::-moz-selection {
+  @apply text-white bg-[#AFBD6C];
+}
+
+::selection {
+  @apply text-white bg-[#AFBD6C];
+}
+
 h1 {
   font-family: Forte, Arial, sans-serif;
   @apply text-4xl;
