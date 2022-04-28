@@ -7,6 +7,13 @@ if (location.hash) {
   location.href = location.hash
 }
 
+if ('serviceWorker' in navigator) {
+  // noinspection JSIgnoredPromiseFromCall
+  navigator.serviceWorker.register(new URL('service-worker.js', import.meta.url), {
+    type: 'module',
+  })
+}
+
 applyWorkarounds()
 setupCarousel()
 

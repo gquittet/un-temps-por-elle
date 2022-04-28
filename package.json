@@ -18,8 +18,10 @@
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.5.0",
     "@parcel/compressor-gzip": "^2.5.0",
+    "@parcel/packager-raw-url": "^2.5.0",
     "@parcel/reporter-bundle-buddy": "^2.5.0",
     "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.5.0",
     "@parcel/transformer-yaml": "^2.5.0",
     "autoprefixer": "^10.4.5",
     "parcel": "^2.5.0",
@@ -31,6 +33,7 @@
   "dependencies": {
     "@alpinejs/intersect": "^3.10.2",
     "@fortawesome/fontawesome-free": "^6.1.1",
+    "@parcel/service-worker": "^2.5.0",
     "@splidejs/splide": "^4.0.1",
     "alpinejs": "^3.10.2"
   }
