@@ -79,7 +79,7 @@ section > * {
 
 /* Accueil */
 .chevron-down {
-  @apply absolute bottom-8 left-0 right-0 flex items-center justify-center;
+  @apply absolute bottom-3 left-0 right-0 flex items-center justify-center;
 
   img {
     @apply cursor-pointer p-4 w-11;
