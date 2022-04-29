@@ -58,6 +58,12 @@ main {
   max-height: calc(var(--vh, 1vh) * 100);
 }
 
+// Disable selection for everything except address text.
+section,
+header {
+  @apply select-none;
+}
+
 //noinspection CssOverwrittenProperties
 section {
   @apply w-full h-screen snap-start text-center pt-24;
