@@ -1,25 +1,16 @@
 Soins visage:
-  - name: Coup d'éclat Grain parfait
+  - name: Coup d'éclat (nettoyage et gommage suivi d'un masque)
     duration: 30 min
     price: 40€
-  - name: Éclat divin
+  - name: Éclat divin (nettoyage, exfoliant, vapozone, modelage et masque)
     duration: 60 min
     price: 55€
-  - name: Éclat suprême
-    duration: 90 min
-    price: 85€
-  - name: Éclat précieux
-    duration: 75 min
-    price: 75€
-  - name: Yeux doux
+  - name: Yeux doux (pour un regard frais et reposé)
     duration: 40 min
     price: 35€
   - name: Yeux doux (en complément d'un soin visage)
     duration: 40 min
     price: 12€
-  - name: For men
-    duration: 60 min
-    price: 55€
 
 Soins du corps:
   - name: Gommage
@@ -34,26 +25,27 @@ Soins du corps:
   - name: Soin du dos (gommage, enveloppements, massage)
     duration: "+/- 1h15"
     price: 65€
-  - name: Rituel du corps (gommage, enveloppement, massage) - Solo
+  - name: Rituel du corps (gommage, enveloppement, massage)
     duration: "+/- 2h"
     price: 95€
-  - name: Rituel du corps (gommage, enveloppement, massage) - Duo
-    duration: "+/- 2h"
-    price: 180€
 
 Beauté des mains/pieds:
   - name: Manucure + pose vernis classique
-    price: 12€ + 5€
-  - name: Spa + pose vernis classique
+    price: 17€
+  - name: Spa + pose vernis classique (mains)
     price: 25€ + 5€
-  - name: Pose vernis semi permanent
+  - name: Pose vernis semi permanent (mains)
     price: 20€
   - name: Pédicure esthétique + pose vernis classique
-    price: 12€ + 5€
+    price: 17€
+  - name: Spa + pose vernis classique (pieds)
+    price: 25€ + 5€
+  - name: Pose vernis semi permanent (pieds)
+    price: 20€
   - name: Dépose vernis semi permanent (pose extérieure)
     price: 10€
 
-Massages relaxants / Réflexologie:
+Massages relaxants:
   - name: Aux huiles essentielles (Dos)
     duration: 30 min
     price: 30€
@@ -63,19 +55,19 @@ Massages relaxants / Réflexologie:
   - name: Lomi Lomi
     duration: 60 min
     price: 60€
-  - name: Jambes et Pieds
+  - name: Jambes lourdes
     duration: 30 min
     price: 30€
-  - name: Jambes lourdes
+  - name: Massage des pieds pour une harmonisation et une relaxation du corps
     duration: 45 min
     price: 45€
-  - name: Harmonisation et relaxation du corps par les pieds
-    duration: 45 min
-    price: 45€
+  - name: Massage enfants
+    duration: 15 min
+    price: 15€
   - name: Réflexologie faciale
     duration: 30 min
     price: 30€
-  - name: Réflexologie faciale avec massage du visage, cou et épaules
+  - name: Réflexologie faciale + massage du visage/cou/épaules
     duration: 45 min
     price: 45€
   - name: Réflexologie palmaire
@@ -96,12 +88,10 @@ Massages relaxants / Réflexologie:
   - name: Bikini simple
     price: 15€
 
-Maquillage:
+Spécial mariée:
   - name: Maquillage jour/soirée
     price: 25€
-
-Spécial mariée:
-  - name: Séance d'essai
+  - name: 1er essai
     price: 12€
   - name: Forfait 1 (soin visage, épilations sourcils, lèvre supérieure et maquillage)
     price: 90€
@@ -113,14 +103,23 @@ Spécial mariée:
   - name: Forfait 4 (Idem Forfait 2 + vernis semi permanent mains et pieds)
     price: 135€
 
-Soins esthétiques pour personnes fragilisées:
+Bien-être des personnes fragilisées:
   - name: Soin visage
-    price: 50€
-  - name: Soin des mains/pieds
-    price: 20€
-  - name: Soin des ongles
-    price: 10€
+    price: 45€
+  - name: Beauté des mains/pieds + pose vernis
+    price: 25€
   - name: Conseils (maquillage, soins, ...)
-    price: 15€
+    price: 20€
   - name: Massage relaxant
-    price: 50€
+    price: 45€
+
+Oncobulle:
+  - name: Bulle douceur
+    price: 45€
+  - name: Mains de soie/Pieds légers, ongles parfaits
+    duration: 30 min
+    price: 25€
+  - name: Évasion douceur
+    price: 45€
+  - name: Je suis belle
+    price: 20€
