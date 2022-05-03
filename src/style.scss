@@ -174,8 +174,16 @@ section > * {
     @apply border-b-2 border-[#AFBD6C];
     @apply lg:py-2;
 
+    .left {
+      @apply w-3/4 text-ellipsis text-left;
+    }
+
     .name {
-      @apply w-3/4 block text-ellipsis text-left;
+      @apply block;
+    }
+
+    .description {
+      @apply block text-sm italic;
     }
 
     .right {

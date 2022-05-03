@@ -173,7 +173,12 @@
                 <span class="title" x-text="titre"></span>
                 <template x-for="soin in soins">
                   <div class="care">
-                    <span class="name" x-text="soin.name">Name</span>
+                    <div class="left">
+                      <span class="name" x-text="soin.name">Name</span>
+                      <span class="description" x-text="soin.description">
+                        Description
+                      </span>
+                    </div>
                     <div class="right">
                       <span class="duration" x-text="soin.duration">Duration</span>
                       <span class="price" x-text="soin.price">Price</span>

@@ -1,14 +1,18 @@
 Soins visage:
-  - name: Coup d'éclat (nettoyage et gommage suivi d'un masque)
+  - name: Coup d'éclat
+    description: Nettoyage et gommage suivi d'un masque
     duration: 30 min
     price: 40€
-  - name: Éclat divin (nettoyage, exfoliant, vapozone, modelage et masque)
+  - name: Éclat divin
+    description: Nettoyage, exfoliant, vapozone, modelage et masque
     duration: 60 min
     price: 55€
-  - name: Yeux doux (pour un regard frais et reposé)
+  - name: Yeux doux
+    description: Pour un regard frais et reposé
     duration: 40 min
     price: 35€
-  - name: Yeux doux (en complément d'un soin visage)
+  - name: Yeux doux
+    description: En complément d'un soin visage
     duration: 40 min
     price: 12€
 
@@ -22,10 +26,12 @@ Soins du corps:
   - name: Soin drainant
     duration: 45 min
     price: 45€
-  - name: Soin du dos (gommage, enveloppements, massage)
+  - name: Soin du dos
+    description: Gommage, enveloppement et massage
     duration: "+/- 1h15"
     price: 65€
-  - name: Rituel du corps (gommage, enveloppement, massage)
+  - name: Rituel du corps
+    description: Gommage, enveloppement et massage
     duration: "+/- 2h"
     price: 95€
 
@@ -58,10 +64,12 @@ Massages relaxants:
   - name: Jambes lourdes
     duration: 30 min
     price: 30€
-  - name: Massage des pieds pour une harmonisation et une relaxation du corps
+  - name: Massage des pieds
+    description: Pour une harmonisation et une relaxation du corps
     duration: 45 min
     price: 45€
   - name: Massage enfants
+    description: À partir d'une histoire (1€/min supplémentaire)
     duration: 15 min
     price: 15€
   - name: Réflexologie faciale
@@ -93,14 +101,17 @@ Spécial mariée:
     price: 25€
   - name: 1er essai
     price: 12€
-  - name: Forfait 1 (soin visage, épilations sourcils, lèvre supérieure et maquillage)
+  - name: Forfait 1
+    description: Soin visage, épilations sourcils, lèvre supérieure et maquillage
     price: 90€
-  - name: Forfait 2 (soin visage, épilations sourcils/lèvre supérieure/aisselles/demi
-      jambes et maquillage)
+  - name: Forfait 2
+    description: Soin visage, épilations sourcils, lèvre supérieure, aisselles, demi jambes et maquillage
     price: 105€
-  - name: Forfait 3 (Idem Forfait 2 + vernis semi permanent mains ou pieds)
+  - name: Forfait 3
+    description: Idem Forfait 2 + vernis semi permanent mains ou pieds
     price: 120€
-  - name: Forfait 4 (Idem Forfait 2 + vernis semi permanent mains et pieds)
+  - name: Forfait 4
+    description: Idem Forfait 2 + vernis semi permanent mains et pieds
     price: 135€
 
 Bien-être des personnes fragilisées:
@@ -115,11 +126,17 @@ Bien-être des personnes fragilisées:
 
 Oncobulle:
   - name: Bulle douceur
+    description: Pure détente pour permettre à la peau du visage de retrouver tout son éclat
+    duration: 60 min
     price: 45€
-  - name: Mains de soie/Pieds légers, ongles parfaits
+  - name: Mains de soie, pieds légers, ongles parfaits
+    description: Soin apaisant et nourrissant des mains, des pieds et des ongles
     duration: 30 min
     price: 25€
   - name: Évasion douceur
+    description: Modelage relaxant du corps qui allie le soin de la peau et la détente des muscles et de l'esprit
+    duration: 60 min
     price: 45€
   - name: Je suis belle
+    description: Conseils en maquillage et soins
     price: 20€
