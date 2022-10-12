@@ -16,6 +16,19 @@
   font-display: swap; /* Improve performance */
 }
 
+// Fix full screen behavior (100vh is really buggy on mobile even with the workaround)
+html, body, main, section {
+  @apply h-full;
+}
+// Prevent chrome to hide url and bottom tab bar
+html {
+  @apply overflow-hidden;
+}
+body {
+  @apply fixed overflow-y-scroll w-full h-full;
+}
+
+// Main style
 html {
   -ms-overflow-style: none; /* IE and Edge */
   //noinspection CssUnknownProperty
@@ -54,8 +67,7 @@ header {
 
 //noinspection CssOverwrittenProperties
 main {
-  @apply max-h-screen overflow-y-scroll snap-mandatory snap-y;
-  max-height: calc(var(--vh, 1vh) * 100);
+  @apply overflow-y-scroll snap-mandatory snap-y;
 }
 
 // Disable selection for everything except address text.
@@ -66,8 +78,7 @@ header {
 
 //noinspection CssOverwrittenProperties
 section {
-  @apply w-full h-screen snap-start text-center pt-24;
-  max-height: calc(var(--vh, 1vh) * 100);
+  @apply w-full snap-start text-center pt-24;
 }
 
 section > * {
