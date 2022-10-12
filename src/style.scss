@@ -129,6 +129,11 @@ section > * {
   @apply absolute text-lg text-white bg-[#00000099] bottom-0 left-0 right-0 pb-7 pt-7;
 }
 
+.splide__pagination__page {
+  width: 6px !important;
+  height: 6px !important;
+}
+
 .oncobulle-logo {
   @apply flex items-center justify-center p-2;
 
