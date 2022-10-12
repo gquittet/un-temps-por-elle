@@ -1,20 +1,21 @@
-import 'swiper/swiper-bundle.min.css'
-// noinspection JSFileReferences
-import Swiper from 'swiper/swiper-bundle.min.js'
+import Splide from '@splidejs/splide'
+import '@splidejs/splide/dist/css/splide.min.css'
 
 export const setupCarousel = () => {
-  new Swiper('.swiper', {
-    // configure Swiper to use modules
-    loop: true,
-
+  new Splide('.splide', {
+    arrows: true,
+    cover: true,
+    height: '20rem',
+    width: '80vw',
+    lazyLoad: 'nearby',
+    interval: 4000,
     speed: 1500,
-    autoplay: {
-      delay: 4000,
-    },
-
-    // Disable preloading of all images
-    preloadImages: false,
-    // Enable lazy loading
-    lazy: true,
-  })
+    rewindSpeed: 2000,
+    rewind: true,
+    rewindByDrag: false,
+    drag: false,
+    autoplay: true,
+    pauseOnHover: false,
+    pagination: false,
+  }).mount()
 }

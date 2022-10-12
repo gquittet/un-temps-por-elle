@@ -106,33 +106,33 @@
         <h2 x-show="shown">Nos Soins</h2>
 
         <div x-show="shown" class="splide m-auto">
-          <div class="swiper carousel">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
                 <img src="images/soins-facial-treatment.jpg?as=webp" alt="Massages" />
                 <div>Soins visage</div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <img src="images/soins-hand-beauty.jpg?as=webp" alt="Massages" />
                 <div>Beauté des mains / pieds</div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <img src="images/soins-body.jpg?as=webp" alt="Massages" />
                 <div>Soins du corps</div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <img src="images/soins-massage.jpg?as=webp" alt="Massages" />
                 <div>Massages relaxants / réflexologie</div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <img src="./images/soins-épilation.jpg?as=webp" alt="Épilations" />
                 <div>Épilations</div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <img src="./images/soins-maquillage.jpg?as=webp" alt="Maquillage" />
                 <div>Maquillage</div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -148,7 +148,7 @@
 
       <section
         id="tarifs"
-        x-data="{ shown: false }"
+        x-data="{ shown: false, }"
         x-intersect.full="shown = true"
         x-intersect:enter.half="page = '#tarifs'"
       >

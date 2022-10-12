@@ -113,21 +113,19 @@ section > * {
 
 /* Soins */
 /* Carrousel */
-.carousel {
-  height: 20rem;
-  width: 80vw;
+.splide__track {
   @apply rounded;
 }
 
-.swiper-slide img {
-  @apply w-full h-full object-cover;
+.splide__slide img {
+  @apply w-full h-auto;
 }
 
-.swiper-slide {
+.splide__slide {
   @apply relative rounded;
 }
 
-.swiper-slide div {
+.splide__slide div {
   @apply absolute text-lg text-white bg-[#00000099] bottom-0 left-0 right-0 pb-7 pt-7;
 }
 
