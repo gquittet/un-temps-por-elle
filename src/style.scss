@@ -33,7 +33,7 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   //noinspection CssUnknownProperty
   scrollbar-width: none; /* Firefox */
-  @apply text-[14px] xl:text-[18px] 2xl:text-[22px];
+  @apply text-[14px] md:text-[12px] xl:text-[16px] 2xl:text-[18px];
 }
 
 ::-webkit-scrollbar {
