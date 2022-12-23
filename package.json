@@ -16,27 +16,27 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/compressor-brotli": "^2.5.0",
-    "@parcel/compressor-gzip": "^2.5.0",
-    "@parcel/config-default": "^2.7.0",
-    "@parcel/core": "^2.7.0",
-    "@parcel/packager-raw-url": "^2.5.0",
-    "@parcel/reporter-bundle-buddy": "^2.5.0",
-    "@parcel/transformer-sass": "^2.5.0",
-    "@parcel/transformer-webmanifest": "^2.5.0",
-    "@parcel/transformer-yaml": "^2.5.0",
-    "autoprefixer": "^10.4.5",
-    "parcel": "^2.5.0",
-    "postcss": "^8.4.12",
-    "prettier": "^2.6.2",
-    "sharp": "^0.29.3",
-    "tailwindcss": "^3.0.24"
+    "@parcel/compressor-brotli": "^2.8.2",
+    "@parcel/compressor-gzip": "^2.8.2",
+    "@parcel/config-default": "^2.8.2",
+    "@parcel/core": "^2.8.2",
+    "@parcel/packager-raw-url": "^2.8.2",
+    "@parcel/reporter-bundle-buddy": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-webmanifest": "^2.8.2",
+    "@parcel/transformer-yaml": "^2.8.2",
+    "autoprefixer": "^10.4.13",
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "sharp": "^0.31.3",
+    "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@alpinejs/intersect": "^3.10.2",
-    "@fortawesome/fontawesome-free": "^6.1.1",
-    "@parcel/service-worker": "^2.5.0",
-    "@splidejs/splide": "^4.0.1",
-    "alpinejs": "^3.10.2"
+    "@alpinejs/intersect": "^3.10.5",
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@parcel/service-worker": "^2.8.2",
+    "@splidejs/splide": "^4.1.4",
+    "alpinejs": "^3.10.5"
   }
 }
