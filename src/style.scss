@@ -17,7 +17,10 @@
 }
 
 // Fix full screen behavior (100vh is really buggy on mobile even with the workaround)
-html, body, main, section {
+html,
+body,
+main,
+section {
   @apply h-full;
 }
 // Prevent chrome to hide url and bottom tab bar
