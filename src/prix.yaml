@@ -4,18 +4,6 @@ Soins visage:
     duration: 60 min
     price: 55€
 
-Beauté des mains/pieds:
-  - name: Manucure + pose vernis classique
-    price: 20€ + 5€
-  - name: Spa manucure + pose vernis classique
-    price: 30€ + 5€
-  - name: Pédicure + pose vernis classique
-    price: 20€ + 5€
-  - name: Spa pédicure + pose vernis classique
-    price: 30€ + 5€
-  - name: Pédicure médicale
-    price: 30€
-
 Soins du corps:
   - name: Gommage
     duration: 30 min
@@ -34,6 +22,32 @@ Soins du corps:
     description: Gommage, enveloppement et massage
     duration: "+/- 2h"
     price: 95€
+
+Beauté des mains/pieds:
+  - name: Manucure + pose vernis classique
+    price: 20€ + 5€
+  - name: Spa manucure + pose vernis classique
+    price: 30€ + 5€
+  - name: Pédicure + pose vernis classique
+    price: 20€ + 5€
+  - name: Spa pédicure + pose vernis classique
+    price: 30€ + 5€
+  - name: Pédicure médicale
+    price: 30€
+
+Épilations:
+  - name: Sourcils
+    price: 8€
+  - name: Lèvre supérieure
+    price: 8€
+  - name: Aisselles
+    price: 12€
+  - name: Demi jambes
+    price: 15€
+  - name: Jambes complètes
+    price: 25€
+  - name: Bikini simple
+    price: 15€
 
 Massages relaxants:
   - name: Aux huiles essentielles (Dos)
@@ -61,20 +75,6 @@ Réflexologie:
   - name: Réflexologie palmaire
     duration: 30 min
     price: 30€
-
-Épilations:
-  - name: Sourcils
-    price: 8€
-  - name: Lèvre supérieure
-    price: 8€
-  - name: Aisselles
-    price: 12€
-  - name: Demi jambes
-    price: 15€
-  - name: Jambes complètes
-    price: 25€
-  - name: Bikini simple
-    price: 15€
 
 Spécial mariée:
   - name: Maquillage jour/soirée
