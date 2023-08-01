@@ -1,20 +1,20 @@
 Soins visage:
-  - name: Coup d'éclat
-    description: Nettoyage et gommage suivi d'un masque
-    duration: 30 min
-    price: 40€
   - name: Éclat divin
     description: Nettoyage, exfoliant, vapozone, modelage et masque
     duration: 60 min
     price: 55€
-  - name: Yeux doux
-    description: Pour un regard frais et reposé
-    duration: 40 min
-    price: 35€
-  - name: Yeux doux
-    description: En complément d'un soin visage
-    duration: 40 min
-    price: 12€
+
+Beauté des mains/pieds:
+  - name: Manucure + pose vernis classique
+    price: 20€ + 5€
+  - name: Spa manucure + pose vernis classique
+    price: 30€ + 5€
+  - name: Pédicure + pose vernis classique
+    price: 20€ + 5€
+  - name: Spa pédicure + pose vernis classique
+    price: 30€ + 5€
+  - name: Pédicure médicale
+    price: 30€
 
 Soins du corps:
   - name: Gommage
@@ -35,30 +35,11 @@ Soins du corps:
     duration: "+/- 2h"
     price: 95€
 
-Beauté des mains/pieds:
-  - name: Manucure + pose vernis classique
-    price: 17€
-  - name: Spa + pose vernis classique (mains)
-    price: 25€ + 5€
-  - name: Pose vernis semi permanent (mains)
-    price: 20€
-  - name: Pédicure esthétique + pose vernis classique
-    price: 17€
-  - name: Spa + pose vernis classique (pieds)
-    price: 25€ + 5€
-  - name: Pose vernis semi permanent (pieds)
-    price: 20€
-  - name: Dépose vernis semi permanent (pose extérieure)
-    price: 10€
-
 Massages relaxants:
   - name: Aux huiles essentielles (Dos)
     duration: 30 min
     price: 30€
   - name: Aux huiles essentielles (Corps)
-    duration: 60 min
-    price: 60€
-  - name: Lomi Lomi
     duration: 60 min
     price: 60€
   - name: Jambes lourdes
@@ -72,9 +53,8 @@ Massages relaxants:
     description: À partir d'une histoire (1€/min supplémentaire)
     duration: 15 min
     price: 15€
-  - name: Réflexologie faciale
-    duration: 30 min
-    price: 30€
+
+Réflexologie:
   - name: Réflexologie faciale + massage du visage/cou/épaules
     duration: 45 min
     price: 45€
@@ -90,7 +70,7 @@ Massages relaxants:
   - name: Aisselles
     price: 12€
   - name: Demi jambes
-    price: 12,50€
+    price: 15€
   - name: Jambes complètes
     price: 25€
   - name: Bikini simple
@@ -122,21 +102,4 @@ Bien-être des personnes fragilisées:
   - name: Conseils (maquillage, soins, ...)
     price: 20€
   - name: Massage relaxant
-    price: 45€
-
-Oncobulle:
-  - name: Bulle douceur
-    description: Pure détente pour permettre à la peau du visage de retrouver tout son éclat
-    duration: 60 min
-    price: 45€
-  - name: Mains de soie, pieds légers, ongles parfaits
-    description: Soin apaisant et nourrissant des mains, des pieds et des ongles
-    duration: 30 min
-    price: 25€
-  - name: Évasion douceur
-    description: Modelage relaxant du corps qui allie le soin de la peau et la détente des muscles et de l'esprit
-    duration: 60 min
-    price: 45€
-  - name: Je suis belle
-    description: Conseils en maquillage et soins
-    price: 20€
+    price: 50€
