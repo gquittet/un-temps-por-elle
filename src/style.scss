@@ -29,13 +29,14 @@ html {
 }
 body {
   @apply fixed overflow-y-scroll w-full h-full;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
 // Main style
 html {
   -ms-overflow-style: none; /* IE and Edge */
   //noinspection CssUnknownProperty
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
   @apply text-[14px] md:text-[12px] xl:text-[16px] 2xl:text-[18px];
 }
 
@@ -71,6 +72,7 @@ header {
 //noinspection CssOverwrittenProperties
 main {
   @apply overflow-y-scroll snap-mandatory snap-y;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
 // Disable selection for everything except address text.
