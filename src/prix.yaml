@@ -2,104 +2,62 @@ Soins visage:
   - name: Éclat divin
     description: Nettoyage, exfoliant, vapozone, modelage et masque
     duration: 60 min
-    price: 55€
+    price: 60€
 
 Soins du corps:
   - name: Gommage
     duration: 30 min
-    price: 25€
+    price: 30€
   - name: Enveloppement
     duration: 30 min
-    price: 25€
-  - name: Soin drainant
-    duration: 45 min
-    price: 45€
-  - name: Soin du dos
+    price: 30€
+  - name: Soin du dos ou jambes
     description: Gommage, enveloppement et massage
     duration: "+/- 1h15"
-    price: 65€
+    price: 75€
   - name: Rituel du corps
     description: Gommage, enveloppement et massage
     duration: "+/- 2h"
-    price: 95€
+    price: 100€
+  - name: Conseils
+    description: Conseils soins pour pallier les effets secondaires sur la peau
+    duration: "+/- 1h"
+    price: 40€
+
+Soins visage:
+  - name: Éclat divin
+    description: Nettoyage, exfoliant, vapozone, modelage et masque
+    price: 60€
 
 Beauté des mains/pieds:
   - name: Manucure + pose vernis classique
     price: 20€ + 5€
   - name: Spa manucure + pose vernis classique
     price: 30€ + 5€
-  - name: Pédicure + pose vernis classique
-    price: 20€ + 5€
   - name: Spa pédicure + pose vernis classique
-    price: 30€ + 5€
+    price: 45€ + 5€
   - name: Pédicure médicale
-    price: 30€
-
-Épilations:
-  - name: Sourcils
-    price: 8€
-  - name: Lèvre supérieure
-    price: 8€
-  - name: Aisselles
-    price: 12€
-  - name: Demi jambes
-    price: 15€
-  - name: Jambes complètes
-    price: 25€
-  - name: Bikini simple
-    price: 15€
+    price: 35€
 
 Massages relaxants:
   - name: Aux huiles essentielles (Dos)
     duration: 30 min
-    price: 30€
+    price: 35€
   - name: Aux huiles essentielles (Corps)
     duration: 60 min
-    price: 60€
+    price: 70€
   - name: Jambes lourdes
     duration: 30 min
-    price: 30€
+    price: 40€
   - name: Massage des pieds
     description: Pour une harmonisation et une relaxation du corps
     duration: 45 min
-    price: 45€
-  - name: Massage enfants
-    description: À partir d'une histoire (1€/min supplémentaire)
-    duration: 15 min
-    price: 15€
+    price: 50€
 
 Réflexologie:
   - name: Réflexologie faciale + massage du visage/cou/épaules
     duration: 45 min
-    price: 45€
+    price: 50€
   - name: Réflexologie palmaire
     duration: 30 min
-    price: 30€
-
-Spécial mariée:
-  - name: Maquillage jour/soirée
-    price: 25€
-  - name: 1er essai
-    price: 12€
-  - name: Forfait 1
-    description: Soin visage, épilations sourcils, lèvre supérieure et maquillage
-    price: 90€
-  - name: Forfait 2
-    description: Soin visage, épilations sourcils, lèvre supérieure, aisselles, demi jambes et maquillage
-    price: 105€
-  - name: Forfait 3
-    description: Idem Forfait 2 + vernis semi permanent mains ou pieds
-    price: 120€
-  - name: Forfait 4
-    description: Idem Forfait 2 + vernis semi permanent mains et pieds
-    price: 135€
-
-Bien-être des personnes fragilisées:
-  - name: Soin visage
-    price: 45€
-  - name: Beauté des mains/pieds + pose vernis
-    price: 25€
-  - name: Conseils (maquillage, soins, ...)
-    price: 20€
-  - name: Massage relaxant
-    price: 50€
+    price: 35€
