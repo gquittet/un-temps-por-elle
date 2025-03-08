@@ -24,11 +24,6 @@ Soins du corps:
     duration: "+/- 1h"
     price: 40€
 
-Soins visage:
-  - name: Éclat divin
-    description: Nettoyage, exfoliant, vapozone, modelage et masque
-    price: 60€
-
 Beauté des mains/pieds:
   - name: Manucure + pose vernis classique
     price: 20€ + 5€
