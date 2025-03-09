@@ -65,15 +65,15 @@ Maquillage:
 Oncobulle:
   - name: Bulle de douceur
     description: Pure détente pour permettre à la peau du visage de retrouver tous son éclat
-    duration: 60min
+    duration: 60 min
     price: 45€
   - name: Mains de soie/Pieds légers, Ongles parfaits
     description: soin apaisant et nourrissant des mains/pieds et des ongles
-    duration: 30min
+    duration: 30 min
     price: 25€
   - name: Evasion douceur
     description: Modelage relaxant du corps qui allie le soin de la peau et la détente des muscles et de l'esprit
-    duration: 60min
+    duration: 60 min
     price: 50€
   - name: Je suis belle
     description: Conseils en maquillage et soins
