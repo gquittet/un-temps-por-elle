@@ -56,3 +56,25 @@ Réflexologie:
   - name: Réflexologie palmaire
     duration: 30 min
     price: 35€
+
+Maquillage:
+  - name: Conseils et techniques de maquillage
+    description: Pour se réapproprier son image corporelle
+    price: 30€
+
+Oncobulle:
+  - name: Bulle de douceur
+    description: Pure détente pour permettre à la peau du visage de retrouver tous son éclat
+    duration: 1h
+    price: 45€
+  - name: Mains de soie/Pieds légers, Ongles parfaits
+    description: soin apaisant et nourrissant des mains/pieds et des ongles
+    duration: 30min
+    price: 25€
+  - name: Evasion douceur
+    description: Modelage relaxant du corps qui allie le soin de la peau et la détente des muscles et de l'esprit
+    duration: 1h
+    price: 50€
+  - name: Je suis belle
+    description: Conseils en maquillage et soins
+    price: 20€
