@@ -1,8 +1,6 @@
 @import url('./fonts/calicanto/stylesheet.css');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/index.css";
 
 @font-face {
   font-family: 'Forte';
